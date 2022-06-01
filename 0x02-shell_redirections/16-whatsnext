@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -n "$(grep 'root' /etc/passwd | wc -l),$(($(grep 'root' /etc/passwd | wc -l) + 3))" /etc/password 
